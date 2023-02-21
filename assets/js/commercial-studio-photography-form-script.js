@@ -1,0 +1,61 @@
+$("#commercialStudioPhotographyForm").validator().on("submit", function (event) {
+    if (event.isDefaultPrevented()) {
+        // handle the invalid form...
+        formError();
+        submitMSG(false, "Did you fill in the form properly?");
+    } else {
+        // everything looks good!
+        event.preventDefault();
+        submitForm();
+    }
+});
+
+
+function submitForm(){
+    // Initiate Variables With Form Content
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var phone = $("#phone").val();
+    var photoshootType = $("#photoshootType").val();
+    var date = $("#date").val();
+    var time = $("#time").val();
+    var duration = $("#duration").val();
+    var anyOtherInformation = $("#anyOtherInformation").val();
+    var membersAmount = $("#membersAmount").val();
+    var canvasPrint = $("#canvasPrint").val();
+
+
+    $.ajax({
+        type: "POST",
+        url: "../../../assets/php/commercial-studio-photography-form-process.php",
+        data: "name=" + name + "&email=" + email + "&phone=" + phone + "&photoshootType=" + photoshootType + "&date=" + date + "&time=" + time + "&duration=" + duration + "&anyOtherInformation=" + anyOtherInformation + "&membersAmount=" + membersAmount + "&canvasPrint=" + canvasPrint,
+        success : function(text){
+            if (text == "success"){
+                formSuccess();
+            } else {
+                formError();
+                submitMSG(false,text);
+            }
+        }
+    });
+}
+
+function formSuccess(){
+    $("#commercialStudioPhotographyForm")[0].reset();
+    submitMSG(true, "Message Submitted!")
+}
+
+function formError(){
+    $("#commercialStudioPhotographyForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        $(this).removeClass();
+    });
+}
+
+function submitMSG(valid, msg){
+    if(valid){
+        var msgClasses = "h3 text-center tada animated text-success";
+    } else {
+        var msgClasses = "h3 text-center text-danger";
+    }
+    $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
+}

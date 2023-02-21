@@ -1,0 +1,771 @@
+/* Home Page Start*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::placeholder {
+  color: gray;
+  opacity: 0.5;
+  font-size: 20px;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: gray;
+  opacity: 0.5;
+  font-size: 20px;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: gray;
+  opacity: 0.5;
+  font-size: 20px;
+}
+
+/* Navigation Bar Start */
+.navigation {
+  /* background-color: rgba(28, 26, 26, 0); */
+  background-color: red;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  z-index: 1;
+  padding-top: 15px;
+}
+
+.logo-img {
+  max-width: 140px;
+  max-height: 80px;
+}
+
+.logo-mobile {
+  display: none;
+  margin-left: 30px;
+}
+
+nav {
+  margin: 20px 0 20px 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li a {
+  font-size: 18px;
+}
+
+nav ul li a,
+nav ul li a:visited {
+  display: block;
+  padding: 0 20px;
+  line-height: 55px;
+  color: white;
+  background-color: rgb(28, 26, 26);
+  text-decoration: none;
+}
+
+nav ul li a {
+  background: transparent;
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+nav ul li a:hover {
+  color: rgba(255, 255, 255, 0.582);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0px;
+  background-color: #f1f1f1;
+  min-width: 200px;
+  font-size: smaller;
+  color: black;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Mobile navigation */
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  height: 70px;
+  width: 70px;
+  margin: 20px 0 20px 0;
+}
+
+@media only screen and (max-width: 800px) {
+  nav ul li {
+    list-style: none;
+    display: block;
+    position: relative;
+    right: 0px;
+  }
+
+  .nav-mobile {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+    padding: 70px 0 15px;
+  }
+
+  .HOME {
+    width: 100%;
+  }
+
+  nav ul {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    display: none;
+    padding-top: 20px;
+    background-color: rgba(255, 255, 255, 0.801);
+  }
+
+  nav ul li {
+    float: none;
+    text-align: center;
+    top: 25%;
+    font-size: 20px;
+  }
+
+  nav ul li a {
+    padding: 15px;
+    line-height: 20px;
+  }
+
+  nav ul li a,
+  nav ul li a:visited {
+    color: black;
+  }
+
+  .logo-img {
+    display: none;
+  }
+
+  .logo-mobile {
+    display: block;
+    margin-left: 30px;
+  }
+
+  nav ul li ul li a {
+    padding-left: 30px;
+  }
+
+  .btn-wrap {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .nav-list {
+    display: block !important;
+  }
+}
+
+#navbar-toggle {
+  position: absolute;
+  left: 18px;
+  top: 25px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+
+#navbar-toggle span,
+#navbar-toggle span:before,
+#navbar-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 3px;
+  width: 30px;
+  background: #0e0c0c8f;
+  position: absolute;
+  display: block;
+  content: "";
+  transition: all 300ms ease-in-out;
+}
+
+#navbar-toggle span:before {
+  top: -10px;
+}
+
+#navbar-toggle span:after {
+  bottom: -10px;
+}
+
+#navbar-toggle.active span {
+  background-color: transparent;
+}
+
+#navbar-toggle.active span:before,
+#navbar-toggle.active span:after {
+  top: 0;
+}
+
+#navbar-toggle.active span:before {
+  transform: rotate(45deg);
+}
+
+#navbar-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+/* Navigation Bar Ends */
+
+/* Slider start */
+.slider-img {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.img-1 {
+  background-image: linear-gradient(to bottom, #0000006b, #ffffff1e),
+    url("../images/Home/Home_Slider/slider-1.jpg");
+}
+
+.img-2 {
+  background-image: linear-gradient(to bottom, #00000088, #ffffff1e),
+    url("../images/Home/Home_Slider/slider-2.jpg");
+}
+
+.img-3 {
+  background-image: linear-gradient(to bottom, #00000088, #ffffff1e),
+    url("../images/Home/Home_Slider/slider-3.jpg");
+}
+
+.btn-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.prev-btn {
+  width: 50px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.next-btn {
+  width: 50px;
+  cursor: pointer;
+}
+
+/* Slider End */
+/* Home Page End*/
+
+/* AboutUs Starts */
+.aboutus button {
+  padding: 10px 30px;
+}
+
+/* Video */
+.video-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-background {
+  position: absolute;
+  /* right: 0; */
+  /* bottom: 0; */
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  /* z-index: -1; */
+}
+
+/* What we offer */
+.bc-1 {
+  background-image: url("../images/Home/we_offer/off-1.jpg");
+}
+
+.bc {
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+  padding: 0;
+}
+
+.bc-2 {
+  background-image: url("../images/Home/we_offer/offfer-2.jpg");
+}
+
+.bc-3 {
+  background-image: url("../images/Home/we_offer/offer-3.jpg");
+}
+
+.col-container {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.363);
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.col-container:hover {
+  background-color: rgba(0, 0, 0, 0.623);
+  transition: 0.5s ease;
+}
+
+.col-container:hover .center {
+  padding-bottom: 50px;
+  transition: 0.5s ease;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease;
+}
+
+.row-fluid {
+  max-height: 270px;
+  overflow: hidden;
+}
+
+/* Weddings */
+.wedding-img {
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  border-image-slice: fill;
+}
+
+.wic-1 {
+  background-image: url("../images/Home/our_works/our-works-1.jpg");
+}
+
+.wic-2 {
+  background-image: url("../images/Home/our_works/our-works-2.jpg");
+}
+
+.wic-3 {
+  background-image: url("../images/Home/our_works/our-workss-3.jpg");
+}
+
+.wic-4 {
+  background-image: url("../images/Home/our_works/our-works-4.jpg");
+}
+
+.wedding-img-container {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.wedding-img-container .overlay-frame {
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.wedding-img-container:hover .overlay-frame {
+  opacity: 1;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+/* Quote */
+.quote {
+  background-color: #705f47a1;
+}
+
+.quote-container {
+  height: 70vh;
+  background-image: url("../images/Home/home-banner.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  position: relative;
+}
+
+.banner-container {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.363);
+  transition: 0.5s ease;
+}
+
+/* See our Loving albums */
+.album-1 {
+  position: relative;
+  padding: 0;
+}
+
+.overlay-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.527);
+}
+
+.album button {
+  padding: 10px 30px;
+}
+
+/* Photography Page Start*/
+.image-card {
+  position: relative;
+}
+
+.image-card {
+  width: 100%;
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.445);
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  text-align: center;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.image-card:hover .overlay {
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.fade-overlay {
+  height: 100%;
+  opacity: 0;
+}
+
+.image-card:hover .fade-overlay {
+  opacity: 1;
+}
+
+/* Photography Page End*/
+
+/* About Us Page Start */
+
+.img-fluid-custome {
+  width: 100%;
+  height: auto;
+}
+
+.underline {
+  height: 5px;
+  width: 100px;
+  background-color: black;
+}
+
+/* About Us Page End */
+
+/* Photography Page Start */
+
+.p-img .overlay-frame {
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.p-img:hover .overlay-frame {
+  opacity: 1;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.p-img {
+  position: relative;
+}
+
+/* Wedding Photography Page Start */
+
+.hero-section-background {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/Photography/wedding-photography/wedding-photo-ban-1.jpg");
+  background-size: cover;
+}
+
+.overlay-frame-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.116);
+}
+
+/* Book Now Start */
+.bc-4 {
+  background-image: url("../images/Photography/wedding-photography/packge-pic-5.jpg");
+}
+
+.bc-5 {
+  background-image: url("../images/Photography/wedding-photography/packge-pic-2.jpg");
+}
+
+.bc-6 {
+  background-image: url("../images/Photography/wedding-photography/packge-pic-3.jpg");
+}
+
+.bc-7 {
+  background-image: url("../images/Photography/wedding-photography/packge-pic-1.jpg");
+}
+
+.bc-8 {
+  background-image: url("../images/Photography/wedding-photography/packge-pic-4.jpg");
+}
+
+.bc-9 {
+  background-image: url("../images/Photography/wedding-photography/packge-pic-5.jpg");
+}
+
+.book-now button {
+  padding: 10px 30px;
+}
+
+.banner-2 {
+  background-image: url("../images/Photography/wedding-photography/wedding-photo-ban-2.jpg");
+  background-position: 49% 28%;
+  background-size: cover;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+/* Book Now End */
+
+.pointer {
+  cursor: pointer;
+}
+
+.pointer .hover-gray {
+  transition: 0.5s ease;
+}
+
+.pointer:hover .hover-gray {
+  color: gray;
+  transition: 0.5s ease;
+}
+
+/* Wedding Photography Page End */
+
+/* Events Page Start */
+
+.hero-section-background-events {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/Photography/event-photography/event-home-bg.jpg");
+  background-size: cover;
+}
+
+.bc-10 {
+  background-image: url("../images/Photography/event-photography/event-pckg/event-pkg-1.jpg");
+}
+
+.bc-11 {
+  background-image: url("../images/Photography/event-photography/event-pckg/event-pkg-2.jpg");
+}
+
+.bc-12 {
+  background-image: url(../images/sample-6_MD.jpg);
+}
+
+.bc-13 {
+  background-image: url(../images/sample-41_MD.jpg);
+}
+
+.bc-14 {
+  background-image: url(../images/sample-25_MD.jpg);
+}
+
+.bc-15 {
+  background-image: url(../images/sample-6_MD.jpg);
+}
+
+.event-img {
+  background-image: url(../images/sample-41_LG.jpg);
+  background-position: center center;
+  height: 500px;
+}
+
+.banner-3 {
+  background-image: url(../images/sample-50_XL.jpg);
+  background-position: 49% 28%;
+  background-size: cover;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+/* Events Page End */
+
+/* Photo Sessions Page Start */
+
+.hero-section-background-sessions {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/Photography/photo-sessions/photo-sess-bg.jpg");
+  background-size: cover;
+}
+
+input.services-value {
+  margin-right: 5px;
+  display: inline-block;
+}
+
+/* Photo Sessions Page End */
+
+/* Photography Page End */
+
+/* Videography Page Start */
+
+.hero-section-background-videography {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../images/sample-39_XL.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.bc-16 {
+  background-image: url(../images/sample-39_XL.jpg);
+}
+
+.bc-17 {
+  background-image: url(../images/sample-119_MD.jpg);
+}
+
+.bc-18 {
+  background-image: url(../images/sample-111_MD.jpg);
+}
+
+/* Videography Page End */
+
+/* Client Area Page Start */
+
+.client-img-container {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background-image: url(../images/21b614895c6c1ec447b629e1a60be9b9-large.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.client-img-container .overlay-frame {
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.client-img-container:hover .overlay-frame {
+  opacity: 1;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+/* Client Area Page End */
+
+/* Wedding Booking Page Start */
+
+.hero-section-background-wedding-booking {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/Photography/wedding-photography/wedding_booking/web-book-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Wedding Booking Page End */
+
+/* Outdoor Photography Booking Page Start */
+
+.hero-section-background-outdoor-photography-booking {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/Photography/photo-sessions/outdoor-photo-session/outdoor-p-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Outdoor Photography Booking Page End */
+
+.line {
+  width: 100%;
+  height: 10px;
+  background-color: #705f47;
+}
+
+/* videography */
+
+p.fs-5.text-secondary.package-item {
+  margin-bottom: 0px;
+}
+
+/*mobile-view*/
+@media screen and (max-width: 767px) {
+  .wedding-img-container .overlay-frame {
+    opacity: 1;
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+}
+
+/*tab-portrait*/
+@media (min-width: 768px) and (max-width: 991px) {
+}
