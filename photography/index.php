@@ -20,7 +20,18 @@
      <!-- Header -->
     <?php include '../assets/includes/header.php'?>
 
+    <!-- ===== PAGE HEADING ======== -->
+  
+
     <div class="container text-center ff mb-5" style="padding-top: 150px">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-header">
+        <h2 class="title-heading">our photography services</h2>
+        </div>
+      
+      </div>
+    </div>
       <div class="row">
         <div class="col-12 col-md-6 mt-4">
           <div class="p-img">

@@ -24,7 +24,10 @@
 
     <!-- Wedding photography packages -->
     <div class="container my-5 pt-4">
-        <h3 class="text-center mb-5">Wedding Photography packages</h3>
+        <!-- <h3 class="text-center mb-5">Wedding Photography packages</h3> -->
+        <div class="section-header">
+        <h2 class="title-heading wed-elopment">Wedding Photography packages</h2>
+        </div>
         <hr />
         <ul class="my-5 fs-5">
             <li class="mb-4">We are a team of professional photographers. Please send your wedding / engagement /
