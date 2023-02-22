@@ -19,7 +19,7 @@
       <div class="row">
         <div class="col-12 col-md-6 mt-4">
           <div class="p-img">
-            <a href="wedding-and-elopement/index.html">
+            <a href="./wedding-and-pre-shoots">
               <img
                 src="../../assets/images/Photography/wedding.jpg"
                 class="img-fluid"
@@ -27,7 +27,7 @@
               />
               <div class="overlay-frame">
                 <div class="center text-white">
-                  <h1>Videography</h1>
+                  <h1>Wedding and Pre Shoots</h1>
                   <p></p>
                   <img
                     src="../../assets/icons/right-arrow.png"
@@ -41,7 +41,7 @@
         </div>
         <div class="col-12 col-md-6 mt-4">
           <div class="p-img">
-            <a href="events/index.html">
+            <a href="./event-videography">
               <img
                 src="../../assets/images/Photography/events.jpg"
                 class="img-fluid"
@@ -49,51 +49,7 @@
               />
               <div class="overlay-frame">
                 <div class="center text-white">
-                  <h1>Same day edit</h1>
-                  <p></p>
-                  <img
-                    src="../../assets/icons/right-arrow.png"
-                    width="25"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 mt-4">
-          <div class="p-img">
-            <a href="photo-sessions/index.html">
-              <img
-                src="../../assets/images/Photography/photosession.jpg"
-                class="img-fluid"
-                alt=""
-              />
-              <div class="overlay-frame">
-                <div class="center text-white">
-                  <h1>Live stream</h1>
-                  <p></p>
-                  <img
-                    src="../../assets/icons/right-arrow.png"
-                    width="25"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 mt-4">
-          <div class="p-img">
-            <a href="commercial-photography/index.html">
-              <img
-                src="../../assets/images/Photography/commercial.jpg"
-                class="img-fluid"
-                alt=""
-              />
-              <div class="overlay-frame">
-                <div class="center text-white">
-                  <h1>Commercial Photography</h1>
+                  <h1>Event Videography</h1>
                   <p></p>
                   <img
                     src="../../assets/icons/right-arrow.png"

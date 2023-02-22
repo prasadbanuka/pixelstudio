@@ -65,7 +65,7 @@
         </div>
         <div class="col-12 col-md-6 mt-4">
           <div class="p-img">
-            <a href="./live stream/">
+            <a href="./live-stream/">
               <img
                 src="../assets/images/Photography/photosession.jpg"
                 class="img-fluid"

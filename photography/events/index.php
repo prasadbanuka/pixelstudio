@@ -12,54 +12,8 @@
 </head>
 
 <body>
-    <!-- Navigation Bar Starts -->
-    <section class="navigation">
-        <div class="nav-container">
-
-            <div class="logo">
-                <a href="../../index.html"><img src="../../assets/images/logo.png" class="logo-mobile" width="140"></a>
-            </div>
-
-            <nav>
-                <div class="nav-mobile">
-                    <div id="navbar-toggle" style="z-index: 2;" href=""><span></span></div>
-                </div>
-                <ul class="justify-content-center" style="z-index: 1;">
-                    <li>
-                        <a href="../../index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="../../about-us/index.html">About Us</a>
-                    </li>
-                    <li>
-                        <a href="../../photography/index.html">Photography</a>
-                    </li>
-
-                    <div class="logo px-3">
-                        <a href="../../index.html"><img src="../../assets/images/logo.png" class="logo-img"></a>
-                    </div>
-
-                    <li>
-                        <a href="../../videography/index.html">Videography</a>
-                    </li>
-                    <li>
-                        <a href="../../event-planning/index.html">Event Planning</a>
-                    </li>
-                    <li>
-                        <div class="dropdown">
-                            <a href="#more" class="dropbtn">More</a>
-                            <div class="dropdown-content">
-                                <a href="../../contact-us/index.html" style="color: black;">CONTACT US</a>
-                                <a href="../../photography/photo-sessions/index.html" style="color: black;">PHOTO
-                                    SESSION COPY</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </section>
-    <!-- Navigation Bar Ends -->
+      <!-- Header -->
+      <?php include '../assets/includes/header.php'?>
 
     <!-- Hero Section -->
     <div class="hero-section-background-events text-center" style="padding-top: 150px;">

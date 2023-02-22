@@ -1,6 +1,6 @@
 <?php 
 
-  $baseUrl = "http://" . $_SERVER['SERVER_NAME'] . "/URGENT/photography/final-site"; 
+  $baseUrl = "http://" . $_SERVER['SERVER_NAME'] . "/URGENT/pixelstudio/pixelstudio"; 
 
 ?>
 

@@ -14,99 +14,35 @@
       <!-- Header -->
       <?php include '../../assets/includes/header.php'?>
 
-    <div class="container text-center ff mb-5" style="padding-top: 150px">
-      <h1>Live stream</h1>
-      <div class="row">
-        <div class="col-12 col-md-6 mt-4">
-          <div class="p-img">
-            <a href="wedding-and-elopement/index.html">
-              <img
-                src="../../assets/images/Photography/wedding.jpg"
-                class="img-fluid"
-                alt=""
-              />
-              <div class="overlay-frame">
-                <div class="center text-white">
-                  <h1>Videography</h1>
-                  <p></p>
-                  <img
-                    src="../../assets/icons/right-arrow.png"
-                    width="25"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </a>
-          </div>
+
+      <!-- Hero Section -->
+      <div class="hero-section-background text-center" style="padding-top: 150px;">
+        <div class="overlay-frame-2">
+            <h1 class="position-absolute top-50 start-50 translate-middle display-4 text-white">Live Stream</h1>
         </div>
-        <div class="col-12 col-md-6 mt-4">
-          <div class="p-img">
-            <a href="events/index.html">
-              <img
-                src="../../assets/images/Photography/events.jpg"
-                class="img-fluid"
-                alt=""
-              />
-              <div class="overlay-frame">
-                <div class="center text-white">
-                  <h1>Same day edit</h1>
-                  <p></p>
-                  <img
-                    src="../../assets/icons/right-arrow.png"
-                    width="25"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 mt-4">
-          <div class="p-img">
-            <a href="photo-sessions/index.html">
-              <img
-                src="../../assets/images/Photography/photosession.jpg"
-                class="img-fluid"
-                alt=""
-              />
-              <div class="overlay-frame">
-                <div class="center text-white">
-                  <h1>Live stream</h1>
-                  <p></p>
-                  <img
-                    src="../../assets/icons/right-arrow.png"
-                    width="25"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 mt-4">
-          <div class="p-img">
-            <a href="commercial-photography/index.html">
-              <img
-                src="../../assets/images/Photography/commercial.jpg"
-                class="img-fluid"
-                alt=""
-              />
-              <div class="overlay-frame">
-                <div class="center text-white">
-                  <h1>Commercial Photography</h1>
-                  <p></p>
-                  <img
-                    src="../../assets/icons/right-arrow.png"
-                    width="25"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
     </div>
+
+    <!-- Wedding photography packages -->
+    <div class="container my-5 pt-4">
+        <h3 class="text-center mb-5">Live Stream Packages</h3>
+        <hr />
+ 
+        <h4>$180 per hour wedding </h4>
+        <h4>$130 event</h4>
+        <br>
+        <p>We have DJ services if you need a DJ.</p>
+        <p>Can’t wait to capture your event</p>
+
+        <!-- Book Now -->
+        <div class="text-center book-now">
+            <h1 class="mt-5">Why Waiting , Book Now</h1>
+            <a href="wedding-booking/index.html">
+                <button class="btn btn-dark rounded-0 mt-5 mb-4">BOOK NOW</button>
+            </a>
+            <hr class="w-50 ms-auto me-auto" />
+        </div>
+    </div>
+
 
     <!-- Footer -->
     <section class="bg-light">
