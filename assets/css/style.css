@@ -85,14 +85,19 @@ html {
 }
 
 /* Navigation Bar Start */
+section.navigation.home-navigation {
+  background-color: transparent;
+  padding-top: 15px;
+}
+
 .navigation {
   /* background-color: rgba(28, 26, 26, 0); */
-  background-color: red;
+  background-color: #000;
   width: 100%;
   height: 100px;
   position: absolute;
   z-index: 1;
-  padding-top: 15px;
+
 }
 
 .logo-img {

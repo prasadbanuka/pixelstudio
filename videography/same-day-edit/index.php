@@ -64,7 +64,7 @@
         <!-- Book Now -->
         <div class="text-center book-now">
             <h1 class="mt-5">Why Waiting , Book Now</h1>
-            <a href="./wedding-booking">
+            <a href="#">
                 <button class="btn btn-dark rounded-0 mt-5 mb-4">BOOK NOW</button>
             </a>
             <hr class="w-50 ms-auto me-auto" />

@@ -5,11 +5,11 @@
 ?>
 
 <!-- Navigation Bar Starts -->
-<section class="navigation">
+<section class="navigation <?php if($page == homepage) {echo "home-navigation";}?>">
   <div class="nav-container">
 
     <div class="logo">
-      <a href="#"><img src="./assets/images/logo.png" class="logo-mobile" width="140"></a>
+      <a href="#"><img src="<?php echo $baseUrl ?>/assets/images/logo.png" class="logo-mobile" width="140"></a>
     </div>
 
     <nav>

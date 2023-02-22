@@ -33,7 +33,7 @@ function submitForm(){
 
     $.ajax({
         type: "POST",
-        url: "../../../assets/php/event-videography-form-process.php",
+        url: "../../../../assets/php/event-videography-form-process.php",
         data: "name=" + name + "&email=" + email + "&phone=" + phone + "&event=" + event + "&eventDate=" + eventDate + "&eventTime=" + eventTime + "&eventLocation=" + eventLocation + "&packageType=" + packageType + "&numberGuests=" + numberGuests + "&food=" + food + "&services=" + services + "&anyOtherInformation=" + anyOtherInformation,
         success : function(text){
             if (text == "success"){

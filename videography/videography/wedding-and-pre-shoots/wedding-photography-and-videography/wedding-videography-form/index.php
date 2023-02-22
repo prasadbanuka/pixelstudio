@@ -234,6 +234,7 @@
 
        <!-- Footer -->
   <?php include '../../../../assets/includes/footer.php'?>
+  <script type="text/javascript" src="<?php echo $baseUrl ?>/assets/js/wedding-videography-booking-script.js"></script>
 </body>
 
 </html>

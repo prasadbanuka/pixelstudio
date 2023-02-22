@@ -11,7 +11,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home || Photo Gallery</title>
+  <title>Pixelstudio - Home</title>
   <link rel="stylesheet" href="assets/bootstrap/bootstrap.css" />
   <link rel="stylesheet" href="assets/slick/slick.css" />
   <link rel="stylesheet" href="assets/slick/slick-theme.css" />
@@ -197,7 +197,7 @@
         </div>
         <div class="form-group mb-4">
           <div class="controls">
-            <input type="text" id="msg_subject" class="form-control" placeholder="Telephone (No spaces)" required
+            <input type="text" id="phone" class="form-control" placeholder="Telephone (No spaces)" required
               data-error="Please enter your telephone number" pattern="^[0-9]*">
             <div class="help-block with-errors"></div>
           </div>
@@ -222,6 +222,7 @@
 
   <!-- Footer -->
   <?php include './assets/includes/footer.php'?>
+  <script type="text/javascript" src="<?php echo $baseUrl ?>/assets/js/contact-form-script.js"></script>
 
 
  

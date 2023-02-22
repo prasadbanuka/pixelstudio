@@ -61,5 +61,5 @@
 <script src="<?php echo $baseUrl ?>/assets/slick/slick.min.js"></script>
 <script src="<?php echo $baseUrl ?>/assets/bootstrap/bootstrap.bundle.js"></script>
 <script type="text/javascript" src="<?php echo $baseUrl ?>/assets/js/form-validator.min.js"></script>
-<script type="text/javascript" src="<?php echo $baseUrl ?>/assets/js/contact-form-script.js"></script>
+
 <script src="<?php echo $baseUrl ?>/assets/js/script.js"></script>

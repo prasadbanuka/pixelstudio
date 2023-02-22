@@ -17,10 +17,10 @@ if (empty($_POST["email"])) {
 }
 
 // MSG SUBJECT
-if (empty($_POST["msg_subject"])) {
+if (empty($_POST["phone"])) {
     $errorMSG .= "Subject is required ";
 } else {
-    $msg_subject = $_POST["msg_subject"];
+    $phone = $_POST["phone"];
 }
 
 
@@ -32,7 +32,7 @@ if (empty($_POST["message"])) {
 }
 
 
-$EmailTo = "info@yourdomain.com";
+$EmailTo = "pixelstudionz@gmail.com";
 $Subject = "Enquiry From Website";
 
 // prepare email body text
@@ -44,14 +44,16 @@ $Body .= "Email: ";
 $Body .= $email;
 $Body .= "\n";
 $Body .= "Telephone: ";
-$Body .= $msg_subject;
+$Body .= $phone;
 $Body .= "\n";
 $Body .= "Message: ";
 $Body .= $message;
 $Body .= "\n";
 
+// "From:".$email
+
 // send email
-$success = mail($EmailTo, $Subject, $Body, "From:".$email);
+$success = mail($EmailTo, $Subject, $Body);
 
 // redirect to success page
 if ($success && $errorMSG == ""){

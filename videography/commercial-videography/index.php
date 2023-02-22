@@ -93,7 +93,7 @@
         <hr />
         <div class="text-center book-now">
             <h1 class="mt-5">Why Waiting , Book Now</h1>
-            <a href="./commercial-outdoor-photography-booking/index.html">
+            <a href="#">
                 <button class="btn btn-dark rounded-0 mt-5 mb-4">BOOK NOW</button>
             </a>
             <hr />
@@ -117,7 +117,7 @@
         <hr />
         <div class="text-center book-now">
             <h1 class="mt-5">Why Waiting , Book Now</h1>
-            <a href="./commercial-studio-photography-booking/index.html">
+            <a href="#">
                 <button class="btn btn-dark rounded-0 mt-5 mb-4">BOOK NOW</button>
             </a>
             <hr />

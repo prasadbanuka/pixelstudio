@@ -249,6 +249,6 @@ Please be very clear that coverage time will be the time our videographers will 
 
 
         <!-- Footer -->
-  <?php include '../../../assets/includes/footer.php'?>
+  <?php include '../../../../assets/includes/footer.php'?>
   </body>
 </html>
