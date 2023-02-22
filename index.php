@@ -50,7 +50,7 @@
       on a low and efficient budget. Most of our photographers are based in Auckland, New Zealand but can travel outside
       of Auckland.
     </p>
-    <button class="btn btn-dark rounded-0 mb-4">Our Team</button>
+    <a href="./about-us" class="btn btn-dark rounded-0 mb-4">Our Team</a>
   </section>
 
   <!-- Video background -->

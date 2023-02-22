@@ -23,21 +23,21 @@
         <div class="col mb-3">
           <h5>Quick Links</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-            <li class="nav-item mb-2"><a href="photography/index.html" class="nav-link p-0 text-muted">Photography</a></li>
-            <li class="nav-item mb-2"><a href="videography/index.html" class="nav-link p-0 text-muted">Videography</a></li>
-            <li class="nav-item mb-2"><a href="event-planning/index.html" class="nav-link p-0 text-muted">Event Planning</a></li>
-            <li class="nav-item mb-2"><a href="contact-us/index.html" class="nav-link p-0 text-muted">Contact Us</a></li>
+            <li class="nav-item mb-2"><a href="<?php echo $baseUrl ?>" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="<?php echo $baseUrl ?>/photography" class="nav-link p-0 text-muted">Photography</a></li>
+            <li class="nav-item mb-2"><a href="<?php echo $baseUrl ?>/videography" class="nav-link p-0 text-muted">Videography</a></li>
+            <li class="nav-item mb-2"><a href="<?php echo $baseUrl ?>/event-planning" class="nav-link p-0 text-muted">Event Planning</a></li>
+            <li class="nav-item mb-2"><a href="<?php echo $baseUrl ?>/contact-us" class="nav-link p-0 text-muted">Contact Us</a></li>
           </ul>
         </div>
   
         <div class="col mb-3">
           <h5>Services</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="about-us/index.html" class="nav-link p-0 text-muted">About Us</a></li>
-            <li class="nav-item mb-2"><a href="photography/index.html" class="nav-link p-0 text-muted">Photography</a></li>
-            <li class="nav-item mb-2"><a href="videography/index.html" class="nav-link p-0 text-muted">Videography</a></li>
-            <li class="nav-item mb-2"><a href="event-planning/index.html" class="nav-link p-0 text-muted">Event Planning</a></li>
+            <li class="nav-item mb-2"><a href="<?php echo $baseUrl ?>/about-us" class="nav-link p-0 text-muted">About Us</a></li>
+            <li class="nav-item mb-2"><a href="<?php echo $baseUrl ?>/photography" class="nav-link p-0 text-muted">Photography</a></li>
+            <li class="nav-item mb-2"><a href="<?php echo $baseUrl ?>/videography" class="nav-link p-0 text-muted">Videography</a></li>
+            <li class="nav-item mb-2"><a href="<?php echo $baseUrl ?>/event-planning" class="nav-link p-0 text-muted">Event Planning</a></li>
           </ul>
         </div>
   
@@ -57,9 +57,9 @@
 
 <!-- Scripts -->
 
-<script src="assets/jquery/jquery-3.6.3.min.js"></script>
-<script src="assets/slick/slick.min.js"></script>
-<script src="assets/bootstrap/bootstrap.bundle.js"></script>
-<script type="text/javascript" src="assets/js/form-validator.min.js"></script>
-<script type="text/javascript" src="assets/js/contact-form-script.js"></script>
-<script src="assets/js/script.js"></script>
+<script src="<?php echo $baseUrl ?>/assets/jquery/jquery-3.6.3.min.js"></script>
+<script src="<?php echo $baseUrl ?>/assets/slick/slick.min.js"></script>
+<script src="<?php echo $baseUrl ?>/assets/bootstrap/bootstrap.bundle.js"></script>
+<script type="text/javascript" src="<?php echo $baseUrl ?>/assets/js/form-validator.min.js"></script>
+<script type="text/javascript" src="<?php echo $baseUrl ?>/assets/js/contact-form-script.js"></script>
+<script src="<?php echo $baseUrl ?>/assets/js/script.js"></script>
